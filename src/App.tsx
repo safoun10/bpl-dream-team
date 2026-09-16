@@ -1,9 +1,10 @@
+import Nav from "./components/Nav"
+
 function App() {
 
     return (
         <div>
-            <div className="text-5xl">test</div>
-            <button className="btn btn-neutral">Neutral</button>
+            <Nav />
         </div>
     )
 }
