@@ -1,0 +1,167 @@
+[
+    {
+        "id": 1,
+        "img": "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+        "name": "Shakib Al Hasan",
+        "country": "Bangladesh",
+        "rating": 89,
+        "battingStyle": "Left-handed",
+        "bowlingStyle": "Left-arm orthodox",
+        "playerType": "All-Rounder",
+        "price": 1800000
+    },
+    {
+        "id": 2,
+        "img": "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+        "name": "Mustafizur Rahman",
+        "country": "Bangladesh",
+        "rating": 88,
+        "battingStyle": "Left-handed",
+        "bowlingStyle": "Left-arm fast-medium",
+        "playerType": "Bowler",
+        "price": 1440000
+    },
+    {
+        "id": 3,
+        "img": "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+        "name": "Pat Cummins",
+        "country": "Australia",
+        "rating": 88,
+        "battingStyle": "Right-handed",
+        "bowlingStyle": "Right-arm fast",
+        "playerType": "Bowler",
+        "price": 2460000
+    },
+    {
+        "id": 4,
+        "img": "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+        "name": "Travis Head",
+        "country": "Australia",
+        "rating": 86,
+        "battingStyle": "Left-handed",
+        "bowlingStyle": "Right-arm off spin",
+        "playerType": "Batsman",
+        "price": 1440000
+    },
+    {
+        "id": 5,
+        "img": "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+        "name": "Joe Root",
+        "country": "England",
+        "rating": 87,
+        "battingStyle": "Right-handed",
+        "bowlingStyle": "Right-arm off spin",
+        "playerType": "Batsman",
+        "price": 1200000
+    },
+    {
+        "id": 6,
+        "img": "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+        "name": "Rashid Khan",
+        "country": "Afghanistan",
+        "rating": 90,
+        "battingStyle": "Right-handed",
+        "bowlingStyle": "Right-arm leg spin",
+        "playerType": "All-Rounder",
+        "price": 1800000
+    },
+    {
+        "id": 7,
+        "img": "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+        "name": "Mehidy Hasan Miraz",
+        "country": "Bangladesh",
+        "rating": 85,
+        "battingStyle": "Right-handed",
+        "bowlingStyle": "Right-arm off spin",
+        "playerType": "All-Rounder",
+        "price": 1260000
+    },
+    {
+        "id": 8,
+        "img": "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+        "name": "Heinrich Klaasen",
+        "country": "South Africa",
+        "rating": 85,
+        "battingStyle": "Right-handed",
+        "bowlingStyle": "Right-arm off spin",
+        "playerType": "Wicketkeeper-Batsman",
+        "price": 1560000
+    },
+    {
+        "id": 9,
+        "img": "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+        "name": "Litton Das",
+        "country": "Bangladesh",
+        "rating": 83,
+        "battingStyle": "Right-handed",
+        "bowlingStyle": "None",
+        "playerType": "Wicketkeeper-Batsman",
+        "price": 1080000
+    },
+    {
+        "id": 10,
+        "img": "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+        "name": "Mitchell Starc",
+        "country": "Australia",
+        "rating": 87,
+        "battingStyle": "Left-handed",
+        "bowlingStyle": "Left-arm fast",
+        "playerType": "Bowler",
+        "price": 2970000
+    },
+    {
+        "id": 11,
+        "img": "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+        "name": "Babar Azam",
+        "country": "Pakistan",
+        "rating": 85,
+        "battingStyle": "Right-handed",
+        "bowlingStyle": "Right-arm off spin",
+        "playerType": "Batsman",
+        "price": 1380000
+    },
+    {
+        "id": 12,
+        "img": "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+        "name": "Jos Buttler",
+        "country": "England",
+        "rating": 86,
+        "battingStyle": "Right-handed",
+        "bowlingStyle": "None",
+        "playerType": "Wicketkeeper-Batsman",
+        "price": 1740000
+    },
+    {
+        "id": 13,
+        "img": "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+        "name": "Taskin Ahmed",
+        "country": "Bangladesh",
+        "rating": 84,
+        "battingStyle": "Left-handed",
+        "bowlingStyle": "Right-arm fast-medium",
+        "playerType": "Bowler",
+        "price": 1020000
+    },
+    {
+        "id": 14,
+        "img": "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+        "name": "Kagiso Rabada",
+        "country": "South Africa",
+        "rating": 88,
+        "battingStyle": "Left-handed",
+        "bowlingStyle": "Right-arm fast",
+        "playerType": "Bowler",
+        "price": 1110000
+    },
+    {
+        "id": 15,
+        "img": "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+        "name": "Rachin Ravindra",
+        "country": "New Zealand",
+        "rating": 82,
+        "battingStyle": "Left-handed",
+        "bowlingStyle": "Left-arm orthodox",
+        "playerType": "All-Rounder",
+        "price": 960000
+    }
+]
