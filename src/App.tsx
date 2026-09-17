@@ -2,6 +2,7 @@ import { Suspense, useState } from "react";
 import Nav from "./components/Nav"
 import Players from "./components/Players";
 import type { Player } from "./types/playerType";
+import { ToastContainer } from "react-toastify";
 
 const playersData = async (): Promise<Player[]> => {
     const res = await fetch("/data.json");
@@ -19,6 +20,7 @@ function App() {
             <Suspense fallback={<p>loading...</p>}>
                 <Players money={money} setMoney={setMoney} playersData={playersData()} />
             </Suspense>
+            <ToastContainer position="top-center" closeOnClick={true} pauseOnHover={false} autoClose={1000} />
         </div>
     )
 }

@@ -4,6 +4,7 @@ import { BsFillLightningChargeFill } from "react-icons/bs";
 import { TbCricket } from "react-icons/tb";
 import { BiCricketBall } from "react-icons/bi";
 import { useState, type Dispatch, type SetStateAction } from "react";
+import { toast } from "react-toastify";
 
 interface EachPlayerProps {
     player: Player;
@@ -19,8 +20,9 @@ const EachPlayer = ({ player, money, setMoney }: EachPlayerProps) => {
         if (money > player.price) {
             setMoney(money - player.price)
             setIsSelected(true);
+            toast(`🗿${player.name} has been purchased!`);
         } else {
-            alert("goribsssssssssss");
+            toast.error("🤣 not enough money, lmao");
         }
     }
 
