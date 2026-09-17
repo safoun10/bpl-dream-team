@@ -6,16 +6,22 @@ interface AvailablePlayersProps {
     players: Player[];
     money: number;
     setMoney: Dispatch<SetStateAction<number>>;
+    selectedPlayers: Player[];
+    setSelectedPlayers: Dispatch<SetStateAction<Player[]>>;
+
 }
 
-const AvailablePlayers = ({ players, money, setMoney }: AvailablePlayersProps) => {
+const AvailablePlayers = ({ players, money, setMoney, selectedPlayers, setSelectedPlayers }: AvailablePlayersProps) => {
     console.log(players);
     return (
         <div className='grid grid-cols-3 gap-5'>
             {
                 players.map((player: Player) => {
                     return (
-                        <EachPlayer money={money} setMoney={setMoney} player={player} key={player.id}></EachPlayer>
+                        <EachPlayer
+                            money={money} setMoney={setMoney} player={player} key={player.id}
+                            selectedPlayers={selectedPlayers} setSelectedPlayers={setSelectedPlayers}
+                        ></EachPlayer>
                     )
                 })
             }

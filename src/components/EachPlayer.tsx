@@ -10,9 +10,11 @@ interface EachPlayerProps {
     player: Player;
     money: number;
     setMoney: Dispatch<SetStateAction<number>>;
+    selectedPlayers: Player[];
+    setSelectedPlayers: Dispatch<SetStateAction<Player[]>>;
 }
 
-const EachPlayer = ({ player, money, setMoney }: EachPlayerProps) => {
+const EachPlayer = ({ player, money, setMoney, selectedPlayers, setSelectedPlayers }: EachPlayerProps) => {
 
     const [isSelected, setIsSelected] = useState(false);
     const handleSelected = () => {
@@ -21,10 +23,11 @@ const EachPlayer = ({ player, money, setMoney }: EachPlayerProps) => {
             setMoney(money - player.price)
             setIsSelected(true);
             toast(`🗿${player.name} has been purchased!`);
+            setSelectedPlayers([...selectedPlayers, player]);
         } else {
             toast.error("🤣 not enough money, lmao");
         }
-    }
+    };
 
     return (
         <div className="w-full max-w-sm overflow-hidden transition-all duration-300 border shadow-md card bg-base-100 border-base-200 hover:shadow-xl rounded-xl">

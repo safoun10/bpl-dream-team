@@ -13,6 +13,8 @@ const Players = ({ playersData, money, setMoney }: PlayersProps) => {
     const players = use(playersData);
 
     const [btnState, setBtnState] = useState("Available");
+    const [selectedPlayers, setSelectedPlayers] = useState<Player[]>([]);
+
     const handleBtnType = (type: "Available" | "Selected") => {
         setBtnState(type)
     };
@@ -39,13 +41,22 @@ const Players = ({ playersData, money, setMoney }: PlayersProps) => {
                         className={`rounded-tl-none rounded-bl-none btn 
                         ${(btnState === "Selected") ? "bg-lime-500 text-white" : ""}`}>
                         Selected
+                        {
+                            selectedPlayers.length > 0 ? ` (${selectedPlayers.length})` : ""
+                        }
                     </button>
                 </div>
             </div>
             {
                 btnState === "Available" ?
-                    <AvailablePlayers money={money} setMoney={setMoney} players={players}></AvailablePlayers> :
-                    <SelectedPlayers></SelectedPlayers>
+                    <AvailablePlayers
+                        money={money} setMoney={setMoney} players={players}
+                        selectedPlayers={selectedPlayers} setSelectedPlayers={setSelectedPlayers}
+                    ></AvailablePlayers> :
+                    <SelectedPlayers
+                        money={money} setMoney={setMoney}
+                        selectedPlayers={selectedPlayers} setSelectedPlayers={setSelectedPlayers}
+                    ></SelectedPlayers>
             }
 
         </div >
