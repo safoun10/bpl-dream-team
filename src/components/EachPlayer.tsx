@@ -3,8 +3,27 @@ import type { Player } from "../types/playerType";
 import { BsFillLightningChargeFill } from "react-icons/bs";
 import { TbCricket } from "react-icons/tb";
 import { BiCricketBall } from "react-icons/bi";
+import { useState, type Dispatch, type SetStateAction } from "react";
 
-const EachPlayer = ({ player }: { player: Player }) => {
+interface EachPlayerProps {
+    player: Player;
+    money: number;
+    setMoney: Dispatch<SetStateAction<number>>;
+}
+
+const EachPlayer = ({ player, money, setMoney }: EachPlayerProps) => {
+
+    const [isSelected, setIsSelected] = useState(false);
+    const handleSelected = () => {
+
+        if (money > player.price) {
+            setMoney(money - player.price)
+            setIsSelected(true);
+        } else {
+            alert("goribsssssssssss");
+        }
+    }
+
     return (
         <div className="w-full max-w-sm overflow-hidden transition-all duration-300 border shadow-md card bg-base-100 border-base-200 hover:shadow-xl rounded-xl">
 
@@ -53,8 +72,13 @@ const EachPlayer = ({ player }: { player: Player }) => {
                         <span className="block text-xs font-medium tracking-wider uppercase text-base-content/60">Price</span>
                         <span className="text-2xl font-extrabold text-base-content">${player.price.toLocaleString()}</span>
                     </div>
-                    <button className="px-5 transition-all shadow-sm btn btn-primary rounded-xl hover:shadow-md">
-                        Choose Player
+                    <button
+                        onClick={() => handleSelected()}
+                        disabled={isSelected}
+                        className="px-5 transition-all shadow-sm btn btn-primary rounded-xl hover:shadow-md">
+                        {
+                            isSelected ? "Selected" : "Choose Player"
+                        }
                     </button>
                 </div>
             </div>

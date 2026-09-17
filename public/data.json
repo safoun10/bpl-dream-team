@@ -8,7 +8,7 @@
         "battingStyle": "Left-handed",
         "bowlingStyle": "Left-arm orthodox",
         "playerType": "All-Rounder",
-        "price": 1800000
+        "price": 180
     },
     {
         "id": 2,
@@ -19,7 +19,7 @@
         "battingStyle": "Left-handed",
         "bowlingStyle": "Left-arm fast-medium",
         "playerType": "Bowler",
-        "price": 1440000
+        "price": 144
     },
     {
         "id": 3,
@@ -30,7 +30,7 @@
         "battingStyle": "Right-handed",
         "bowlingStyle": "Right-arm fast",
         "playerType": "Bowler",
-        "price": 2460000
+        "price": 246
     },
     {
         "id": 4,
@@ -41,7 +41,7 @@
         "battingStyle": "Left-handed",
         "bowlingStyle": "Right-arm off spin",
         "playerType": "Batsman",
-        "price": 1440000
+        "price": 144
     },
     {
         "id": 5,
@@ -52,7 +52,7 @@
         "battingStyle": "Right-handed",
         "bowlingStyle": "Right-arm off spin",
         "playerType": "Batsman",
-        "price": 1200000
+        "price": 120
     },
     {
         "id": 6,
@@ -63,7 +63,7 @@
         "battingStyle": "Right-handed",
         "bowlingStyle": "Right-arm leg spin",
         "playerType": "All-Rounder",
-        "price": 1800000
+        "price": 180
     },
     {
         "id": 7,
@@ -74,7 +74,7 @@
         "battingStyle": "Right-handed",
         "bowlingStyle": "Right-arm off spin",
         "playerType": "All-Rounder",
-        "price": 1260000
+        "price": 126
     },
     {
         "id": 8,
@@ -85,7 +85,7 @@
         "battingStyle": "Right-handed",
         "bowlingStyle": "Right-arm off spin",
         "playerType": "Wicketkeeper-Batsman",
-        "price": 1560000
+        "price": 156
     },
     {
         "id": 9,
@@ -96,7 +96,7 @@
         "battingStyle": "Right-handed",
         "bowlingStyle": "None",
         "playerType": "Wicketkeeper-Batsman",
-        "price": 1080000
+        "price": 108
     },
     {
         "id": 10,
@@ -107,7 +107,7 @@
         "battingStyle": "Left-handed",
         "bowlingStyle": "Left-arm fast",
         "playerType": "Bowler",
-        "price": 2970000
+        "price": 297
     },
     {
         "id": 11,
@@ -118,7 +118,7 @@
         "battingStyle": "Right-handed",
         "bowlingStyle": "Right-arm off spin",
         "playerType": "Batsman",
-        "price": 1380000
+        "price": 138
     },
     {
         "id": 12,
@@ -129,7 +129,7 @@
         "battingStyle": "Right-handed",
         "bowlingStyle": "None",
         "playerType": "Wicketkeeper-Batsman",
-        "price": 1740000
+        "price": 174
     },
     {
         "id": 13,
@@ -140,7 +140,7 @@
         "battingStyle": "Left-handed",
         "bowlingStyle": "Right-arm fast-medium",
         "playerType": "Bowler",
-        "price": 1020000
+        "price": 102
     },
     {
         "id": 14,
@@ -151,7 +151,7 @@
         "battingStyle": "Left-handed",
         "bowlingStyle": "Right-arm fast",
         "playerType": "Bowler",
-        "price": 1110000
+        "price": 111
     },
     {
         "id": 15,
@@ -162,6 +162,6 @@
         "battingStyle": "Left-handed",
         "bowlingStyle": "Left-arm orthodox",
         "playerType": "All-Rounder",
-        "price": 960000
+        "price": 96
     }
 ]

@@ -1,12 +1,15 @@
-import { use, useState } from 'react';
+import { use, useState, type Dispatch, type SetStateAction } from 'react';
 import type { Player } from '../types/playerType';
 import AvailablePlayers from './AvailablePlayers';
+import SelectedPlayers from './SelectedPlayers';
 
 interface PlayersProps {
-    playersData: Promise<Player[]>
+    playersData: Promise<Player[]>;
+    money: number;
+    setMoney: Dispatch<SetStateAction<number>>;
 }
 
-const Players = ({ playersData }: PlayersProps) => {
+const Players = ({ playersData, money, setMoney }: PlayersProps) => {
     const players = use(playersData);
 
     const [btnState, setBtnState] = useState("Available");
@@ -16,8 +19,14 @@ const Players = ({ playersData }: PlayersProps) => {
 
     return (
         <div className='mx-auto my-20 max-w-300'>
-            <div className='flex items-center justify-between mb-10'>
-                <div className='text-3xl font-bold'>Available Players</div>
+            <div className='flex items-center justify-between mb-20'>
+                <div className='text-3xl font-bold'>
+                    {
+                        btnState === "Available" ?
+                            "Available Players" :
+                            "Selected Players"
+                    }
+                </div>
                 <div className='flex'>
                     <button
                         onClick={() => handleBtnType("Available")}
@@ -33,7 +42,12 @@ const Players = ({ playersData }: PlayersProps) => {
                     </button>
                 </div>
             </div>
-            <AvailablePlayers players={players}></AvailablePlayers>
+            {
+                btnState === "Available" ?
+                    <AvailablePlayers money={money} setMoney={setMoney} players={players}></AvailablePlayers> :
+                    <SelectedPlayers></SelectedPlayers>
+            }
+
         </div >
     );
 };

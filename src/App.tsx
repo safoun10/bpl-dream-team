@@ -1,4 +1,4 @@
-import { Suspense } from "react";
+import { Suspense, useState } from "react";
 import Nav from "./components/Nav"
 import Players from "./components/Players";
 import type { Player } from "./types/playerType";
@@ -11,11 +11,13 @@ const playersData = async (): Promise<Player[]> => {
 
 function App() {
 
+    const [money, setMoney] = useState(500);
+
     return (
         <div>
-            <Nav />
+            <Nav money={money} />
             <Suspense fallback={<p>loading...</p>}>
-                <Players playersData={playersData()} />
+                <Players money={money} setMoney={setMoney} playersData={playersData()} />
             </Suspense>
         </div>
     )
