@@ -12,7 +12,7 @@ const EachPlayer = ({ player }: { player: Player }) => {
                 <img
                     src={player.img}
                     alt={player.name}
-                    className="object-cover object-top w-full h-full transition-transform duration-500 group-hover:scale-110"
+                    className="object-cover object-top w-full h-full transition-transform duration-500 hover:scale-110"
                 />
                 <div className="absolute gap-1 font-semibold shadow-sm top-3 right-3 badge badge-neutral backdrop-blur-md bg-opacity-80">
                     <BsFillLightningChargeFill className="text-xs text-amber-400" />
